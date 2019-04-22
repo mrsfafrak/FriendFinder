@@ -17,6 +17,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <br>
                 <h1> Survey Questions</h1>
                 <hr class="my-4">
                 <form>
@@ -26,7 +27,7 @@
                     </div>
                     <div class="form-group">
                         <label for="user-picture">Link to Photo Image (Required)</label>
-                        <input type="text" class="form-control" id="user-name" placeholder="https://www.google.com"
+                        <input type="text" class="form-control" id="user-picture" placeholder="https://www.google.com"
                             required>
                     </div>
                 </form>
@@ -130,7 +131,7 @@
                 <br>
                 <h3>Question 9</h3>
                 <h5>Rate your skills in Express.js:</h5>
-                <select id="9">
+                <select id="q9">
                     <option value=""></option>
                     <option value="1">1 (not confident)</option>
                     <option value="2">2</option>
@@ -181,3 +182,33 @@
 <script src="../server.js"></script>
 
 </html>
+
+<script type="text/javascript">
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+
+        var newFriend = {
+            name: $("#user-name").val().trim(),
+            photo: $("#user-picture").val().trim(),
+            scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+        };
+
+        $.post("/api/friends", newFriend,
+            function (data) {
+                alert("you have a new friend");
+                $("#user-name").val("");
+                $("#user-picture").val("");
+                $("#q1").val("");
+                $("#q2").val("");
+                $("#q3").val("");
+                $("#q4").val("");
+                $("#q5").val("");
+                $("#q6").val("");
+                $("#q7").val("");
+                $("#q8").val("");
+                $("#q9").val("");
+                $("#q10").val("");
+            });
+    });
+
+</script>
