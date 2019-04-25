@@ -15,6 +15,12 @@ img{
     height: 26rem;
     width: 41rem;  
     margin-top: 2rem;
-    margin-left: 5rem;
+    margin-left: 8rem;
     text-align: center;
+}
+h3,h2,h1{
+    font-family: 'Source Code Pro', monospace;
+}
+h5,p,a{
+    font-family: 'Encode Sans Condensed', sans-serif;
 }
