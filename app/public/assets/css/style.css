@@ -1,16 +1,19 @@
 img{
     height: 10rem;
-    width: 10rem;
+    width: 12rem;
+    text-align: center;
 }
 .modal-content{
-    height: 35rem;
-    width: 50rem;
+    height: 20rem;
+    width: 40rem;
 }
 #friend-name{
     font-size: 2rem;
+    text-align: center;
 }
 .modal{
-    height: 36rem;
-    width: 51rem;  
+    height: 21rem;
+    width: 41rem;  
     margin: 2rem auto;
+    text-align: center;
 }
