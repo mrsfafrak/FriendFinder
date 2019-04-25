@@ -1,0 +1,11 @@
+img{
+    height: 75rem;
+    width: 100rem;
+}
+.modal-content{
+    height: 200rem;
+    width: 300rem;
+}
+#friend-name{
+    font-size: 10rem;
+}
