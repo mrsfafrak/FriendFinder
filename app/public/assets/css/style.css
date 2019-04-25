@@ -4,7 +4,7 @@ img{
     text-align: center;
 }
 .modal-content{
-    height: 20rem;
+    height: 25rem;
     width: 40rem;
 }
 #friend-name{
@@ -12,8 +12,9 @@ img{
     text-align: center;
 }
 .modal{
-    height: 21rem;
+    height: 26rem;
     width: 41rem;  
-    margin: 2rem auto;
+    margin-top: 2rem;
+    margin-left: 5rem;
     text-align: center;
 }
