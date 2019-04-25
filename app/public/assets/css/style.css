@@ -9,3 +9,8 @@ img{
 #friend-name{
     font-size: 2rem;
 }
+.modal{
+    height: 36rem;
+    width: 51rem;  
+    margin: 2rem auto;
+}
