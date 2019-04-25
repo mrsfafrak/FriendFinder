@@ -21,6 +21,15 @@ img{
 h3,h2,h1{
     font-family: 'Source Code Pro', monospace;
 }
-h5,p,a{
+h5,p,a,label,button,input{
     font-family: 'Encode Sans Condensed', sans-serif;
+}
+label,h1{
+    font-weight: bold;
+}
+.jumbo-detail{
+text-align: center;
+}
+h1{
+    text-align: center;
 }
